@@ -9,21 +9,14 @@
 using namespace std;
 
 int main() {
-  int x, y, z;
-  cin >> x >> y >> z;
-  if (y < 0) {
-    x = -x;
-    y = -y;
-    z = -z;
-  }
-  if (x < y) {
-    printf("%d\n", abs(x));
+  string s, t;
+  cin >> s >> t;
+  sort(s.begin(), s.end());
+  sort(t.begin(), t.end(), greater<int>());
+  if (s < t) {
+    cout << "Yes" << endl;
   } else {
-    if (z > y) {
-      puts ("-1");
-    } else {
-      printf("%d\n", abs(z)+abs(x-z));
-    }
+    cout << "No" << endl;
   }
   return 0;
 }
