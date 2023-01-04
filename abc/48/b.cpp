@@ -11,13 +11,17 @@ using ll = long long;
 #define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
-int n;
-int ans = 0;
-long long t;
+ll f(ll n, ll x) {
+  return n / x;
+}
 
 int main() {
-  cin >> n;
+  ll a, b, x; cin >> a >> b >> x;
 
-  cout << ans << endl;
+  if (a==0) {
+    cout << f(b,x)+1 << endl;
+  } else {
+    cout << f(b,x) - f(a-1,x) << endl;
+  }
   return 0;
 }

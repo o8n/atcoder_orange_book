@@ -18,6 +18,6 @@ long long t;
 int main() {
   cin >> n;
 
-  cout << ans << endl;
+  cout << ans << endl;a
   return 0;
 }

@@ -11,13 +11,14 @@ using ll = long long;
 #define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
-int n;
-int ans = 0;
-long long t;
+int a,b,c,d;
 
 int main() {
-  cin >> n;
+  cin >> a >> b >> c >> d;
+  
+  const int lower = max(a,c);
+  const int upper = min(b, d);
 
-  cout << ans << endl;
+  cout << max(0, upper-lower) << endl;
   return 0;
 }

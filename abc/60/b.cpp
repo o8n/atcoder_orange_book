@@ -11,13 +11,17 @@ using ll = long long;
 #define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
-int n;
-int ans = 0;
-long long t;
-
 int main() {
-  cin >> n;
+  int a, b, c;
+  cin >> a >> b >> c;
 
-  cout << ans << endl;
+  for (int i=1;i<=b;i++) {
+    if (a*i % b==c) {
+      cout << "YES" << endl;
+      return 0;
+    }
+  }
+  cout << "No" << endl;
+
   return 0;
 }

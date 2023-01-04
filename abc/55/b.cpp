@@ -8,15 +8,19 @@
 #include <functional>
 #include <sstream>
 using ll = long long;
-#define rep(i, n) for (int i = 0; i < (n); ++i)
+#define rep(i, n) for (int i = 1; i <= (n); ++i)
 using namespace std;
 
-int n;
-int ans = 0;
-long long t;
+ll n;
+ll ans = 1;
 
 int main() {
   cin >> n;
+
+  rep(i,n) {
+    ans *= i;
+    ans %= 1000000007;
+  }
 
   cout << ans << endl;
   return 0;
