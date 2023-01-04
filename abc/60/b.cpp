@@ -21,7 +21,7 @@ int main() {
       return 0;
     }
   }
-  cout << "No" << endl;
+  cout << "NO" << endl;
 
   return 0;
 }
