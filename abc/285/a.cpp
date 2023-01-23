@@ -8,15 +8,19 @@
 #include <functional>
 #include <sstream>
 using ll = long long;
-#define rep(i, n) for (ll i = 0; i < (n); ++i)
+#define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
-ll n;
-int ans = 0;
+int a, b;
 
 int main() {
-  cin >> n;
-
-  cout << ans << endl;
+  cin >> a >> b;
+  for (int i=1; i <=7; i++) {
+    if (a==i && (b == 2*i || b == 2*i+1)) {
+      cout << "Yes" << endl;
+      return 0;
+    }
+  }
+  cout << "No" << endl;
   return 0;
 }

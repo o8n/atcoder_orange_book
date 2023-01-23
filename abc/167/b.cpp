@@ -11,12 +11,18 @@ using ll = long long;
 #define rep(i, n) for (ll i = 0; i < (n); ++i)
 using namespace std;
 
-ll n;
+ll a,b,c,k;
 int ans = 0;
 
 int main() {
-  cin >> n;
+  cin >> a >> b >> c >> k;
 
-  cout << ans << endl;
+  if (a>=k) {
+    cout << k << endl;
+  } else if (a+b>=k) {
+    cout << a << endl;
+  } else {
+    cout << a - (k-a-b) << endl;
+  }
   return 0;
 }

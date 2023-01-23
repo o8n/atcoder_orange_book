@@ -8,15 +8,22 @@
 #include <functional>
 #include <sstream>
 using ll = long long;
-#define rep(i, n) for (ll i = 0; i < (n); ++i)
+#define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
-ll n;
-int ans = 0;
+string s,t;
 
 int main() {
-  cin >> n;
+  cin >> s >> t;
 
-  cout << ans << endl;
+  bool judge = true;
+
+  for (int i=0; i<s.size(); i++) {
+    if (s[i]!=t[i]) {
+      judge = false;
+    }
+  }
+
+  cout << (judge==true ? "Yes" : "No") << endl;
   return 0;
 }

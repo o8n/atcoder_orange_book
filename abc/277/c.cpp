@@ -11,13 +11,30 @@ using ll = long long;
 #define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
-int n;
-int ans = 0;
-long long t;
+long long n;
+ll ans = 0;
 
 int main() {
   cin >> n;
+  vector<long> a(n), b(n);
+  rep(i,n) cin >> a[i] >> b[i];
 
-  cout << ans << endl;
-  return 0;
+  rep(i,n) {
+    if (a[i] == 1) {
+      ans++;
+    }
+  }
+  if (ans==0) {
+    cout << '1' << endl;
+    return 0;
+  } else {
+    ll height = max(a[1],b[1]);
+    rep(i, n) {
+      if (min(a[i], b[i])==height) {
+        height = max(a[i], b[i]);
+      }
+    }
+    cout << height << endl;
+    return 0;
+  }
 }

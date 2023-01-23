@@ -8,15 +8,22 @@
 #include <functional>
 #include <sstream>
 using ll = long long;
-#define rep(i, n) for (ll i = 0; i < (n); ++i)
+#define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 
-ll n;
-int ans = 0;
+int n, k;
 
 int main() {
-  cin >> n;
+  cin >> n >> k;
+  vector<int> p(n);
 
+  rep(i, n) cin >> p[i];
+  sort(p.begin(), p.end());
+
+  int ans = 0;
+  rep(i,k) {
+    ans+=p[i];
+  }
   cout << ans << endl;
   return 0;
 }

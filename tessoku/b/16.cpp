@@ -3,14 +3,14 @@
 using namespace std;
 
 int main() {
-  int n, a[100009], b[100009];
+  int n, h[100009];
   int dp[100009];
   cin >> n;
-  for (int i=2;i<=n;i++) cin >> a[i]; for (int i=3;i<=n;i++) cin >> b[i];
+  for (int i=1; i<=n; i++) cin >> h[i];
   dp[1] = 0;
-  dp[2] = a[2];
+  dp[2] = abs(h[1]-h[2]);
   for (int i = 3; i<=n; i++) {
-    dp[i] = min(dp[i-1]+a[i], dp[i-2]+b[i]);
+    dp[i] = min(dp[i-1]+abs(h[i-1]-h[i]), dp[i-2]+abs(h[i-2]-h[i]));
   }
   cout << dp[n] << endl;
   return 0;
