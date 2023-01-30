@@ -3,16 +3,22 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "/home/o8n/ac-library/ac-library/",
+                "${workspaceFolder}/**",
+                "/usr/include/**"
             ],
-            "defines": [],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
             "macFrameworkPath": [
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"
             ],
-            "compilerPath": "/usr/bin/clang",
+            "compilerPath": "/usr/bin/gcc-9",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "macos-clang-x64"
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4

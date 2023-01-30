@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bits/stdc++.h>
 #include <string>
 #include <stdio.h>
 #include <vector>
@@ -6,16 +7,16 @@
 #include <algorithm>
 #include <functional>
 #include <sstream>
-#define rep(i, n) for (int i = 0; i < (n); ++i)
+using ll = long long;
+#define rep(i, n) for (ll i = 0; i < (n); ++i)
 using namespace std;
 
+ll n;
+int ans = 0;
+
 int main() {
-  int n;
-  long long c, k;
   cin >> n;
-  vector<int> a(n);
-  rep(i,n) cin >> a[i];
 
   cout << ans << endl;
-	return 0;
+  return 0;
 }
