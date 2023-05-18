@@ -12,7 +12,12 @@ using ll = long long;
 using namespace std;
 
 int main() {
-
-  cout << ans << endl;
+  ll a, b;
+  cin >> a >> b;
+  int result = 1;
+  for (int i=1; i<= b; i++) {
+    result *= a;
+  }
+  cout << result << endl;
   return 0;
 }

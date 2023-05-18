@@ -12,6 +12,17 @@ using ll = long long;
 using namespace std;
 
 int main() {
+  int n, d, x;
+  cin >> n >> d >> x;
+  vector<int> a(n);
+  rep(i,n) cin >> a[i];
+
+  int ans = x;
+
+  rep(i, n) {
+    int tmp = (d-1)/a[i]+1;
+    ans+=tmp;
+  }
 
   cout << ans << endl;
   return 0;

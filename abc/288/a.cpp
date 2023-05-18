@@ -11,8 +11,17 @@ using ll = long long;
 #define rep(i, n) for (ll i = 0; i < (n); ++i)
 using namespace std;
 
-int main() {
+ll n;
+int ans = 0;
 
-  cout << ans << endl;
+int main() {
+  cin >> n;
+  vector<ll> a(n), b(n);
+  rep(i,n) cin >> a[i] >> b[i];
+
+  rep(i,n) {
+    cout << a[i]+b[i] << endl;
+  }
+
   return 0;
 }

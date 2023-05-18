@@ -12,9 +12,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "macFrameworkPath": [
-                "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"
-            ],
+            "macFrameworkPath": [],
             "compilerPath": "/usr/bin/gcc-9",
             "cStandard": "c17",
             "cppStandard": "c++17",

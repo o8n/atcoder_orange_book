@@ -11,8 +11,23 @@ using ll = long long;
 #define rep(i, n) for (ll i = 0; i < (n); ++i)
 using namespace std;
 
-int main() {
+bool isPrime(ll x) {
+  for (int i=2; i*i<=x; i++) {
+    if (x % i == 0) return false;
+  }
+  return true;
+}
 
-  cout << ans << endl;
+int main() {
+  ll x;
+  cin >> x;
+
+  for (int i = x; i <= 1000001; i++) {
+    if (isPrime(i)) {
+      cout << i << endl;
+      return 0;
+    }
+  }
+
   return 0;
 }

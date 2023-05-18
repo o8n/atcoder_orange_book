@@ -12,7 +12,16 @@ using ll = long long;
 using namespace std;
 
 int main() {
+  string s;
+  cin >> s;
 
+  int ans = numeric_limits<int>::max();
+
+  for (int i = 0; i <= s.length() - 3; i++) {
+    string subStr = s.substr(i, 3);
+    int num = stoi(subStr);
+    ans = min(ans, abs(num - 753));
+  }
   cout << ans << endl;
   return 0;
 }

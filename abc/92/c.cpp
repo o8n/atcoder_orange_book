@@ -11,7 +11,11 @@ using ll = long long;
 #define rep(i, n) for (ll i = 0; i < (n); ++i)
 using namespace std;
 
+ll n;
+int ans = 0;
+
 int main() {
+  cin >> n;
 
   cout << ans << endl;
   return 0;

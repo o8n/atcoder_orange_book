@@ -13,12 +13,8 @@ int main() {
   int ans = 0;
   rep(i, N) {
     A[i] = S[i] - ans;
-    ans += A[j];
+    ans += A[i];
   }
-  // A[0] = S[0];
-  // for (int i=1; i <= N; i++) {
-  //   A[i] = S[i] - S[i-1];
-  // }
   rep(i,N) cout << A[i] << ' ';
   cout << endl;
   return 0;
