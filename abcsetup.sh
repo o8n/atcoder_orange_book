@@ -22,4 +22,9 @@ cp -n template.cpp abc/$1/b.cpp
 cp -n template.cpp abc/$1/c.cpp
 cp -n template.cpp abc/$1/d.cpp
 
+cp -n template.py abc/$1/a.py
+cp -n template.py abc/$1/b.py
+cp -n template.py abc/$1/c.py
+cp -n template.py abc/$1/d.py
+
 exit 0

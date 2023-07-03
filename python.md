@@ -1,0 +1,1 @@
+< 入力 の 受け取り > 入力 の 受け取り は 以下 の 5 つ を 覚え て おけ ば よい。 　 (1) 数字 が 1 つ 入力： N N = int( input()) 　 (2) 数字 が 2 つ 以上 で 別々 に 受け取り 入力： A B A, B = map( int, input(). split()) 　 (3) 文字列 が 1 つ 入力： S S = input() 　 (4) 文字列 が 2 つ 以上 で 別々 に 受け取り 入力： S T S, T = map( str, input(). split()) 　 (5) リスト で 受け取り 入力： A 1 A 2 … An A = list( map( int, input(). split()))

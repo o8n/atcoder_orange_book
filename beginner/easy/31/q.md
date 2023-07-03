@@ -1,0 +1,9 @@
+https://atcoder.jp/contests/abc098/tasks/abc098_b
+https://atcoder.jp/contests/abc051/tasks/abc051_b
+https://atcoder.jp/contests/abc157/tasks/abc157_c
+https://atcoder.jp/contests/abc195/tasks/abc195_b
+https://atcoder.jp/contests/abc079/tasks/abc079_c
+https://atcoder.jp/contests/abc088/tasks/abc088_c
+https://atcoder.jp/contests/abc095/tasks/abc095_c
+https://atcoder.jp/contests/abc108/tasks/abc108_c
+https://atcoder.jp/contests/abc112/tasks/abc112_c
